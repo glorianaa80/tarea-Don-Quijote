@@ -1,0 +1,86 @@
+/* Estilos */
+*{
+    margin: 10px;
+    padding: 10px;
+}
+/* Titulo principal, debe ser en mayuscula y centrado */
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* Cambiar el estilo de la lista, que se alfabetico. (a, b, c, d....)  */
+ul {
+    list-style: upper-alpha;
+}
+
+
+/* Los titulos secondarios, que el tamaño de la tipografia sea 40px con estilo italiano */
+h2 {
+    font-family: italians;
+    font-size: 40px;
+}
+
+
+/* Buscar dentro de cada parrafo todas las palabras Quijote y resaltar con un color anaranjando y raya abajo de la palabra  */
+
+span{
+    color: orange;
+    text-decoration:underline;
+}
+
+/* Implementar a todos los parrafos la tipografia tipo arial y si la computadora no la tiene que carge una tipografia sin serifa */
+.texto1 {
+    font-family: arial;
+}
+
+
+/* La primera letra de cada parrafo que sea en mayuscula, negrita y con un tamaño de 25px  */
+p::first-letter {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+}
+    
+
+
+/* La primer linea de cada parrafo, implementar una sangria(espacio hacia dentro) */
+/* Justificar todos los textos de los parrafos */
+p {
+    text-indent: 20px;
+    text-align: justify;
+}
+
+
+/* Los botones de cada capitulo que dicen ver capitulo completo, que sean:  
+    _ Remover la linea que muestra debajo del texto.
+    _ De color #555555. 
+    _ Con un tamaño de 20px. 
+    _ Con borde negro.
+    _ Color de texto que sea blanco.
+    _ Ancho de 200px.
+    _ Texto centrado.
+    _ Espaciado entre cada letra de 2px.
+
+    Implementar que al pasar el mouse por encima invierta los colores:
+    _ Texto en #555555.
+    _ Color de fondo blanco.
+*/
+
+a{
+    text-decoration:none;
+    color: white;
+    padding: 20px;
+    border: solid 1px black;
+    background-color: #555555;
+    width: 200px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+a:hover{
+    color: #555555;
+    background-color: white;
+    border: solid 1px #555555;
+}
